@@ -35,7 +35,7 @@ Go into the following path of cloned code "application-code/app-tier/DbConfig.js
 module.exports = Object.freeze({
     DB_HOST: 'YOUR-DATABASE-ENDPOINT.ap-south-1.rds.amazonaws.com',
     DB_USER: 'admin',
-    DB_PWD: 'kastro2025',
+    DB_PWD: '<YOUR DB PASSWORD>',
     DB_DATABASE: 'webappdb'
 });
 
