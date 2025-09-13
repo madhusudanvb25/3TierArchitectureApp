@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const os = require('os');
 const fetch = require('node-fetch');
+const { AsyncLocalStorage } = require('async_hooks');
 
 const app = express();
 const port = 4000;
@@ -97,3 +98,5 @@ app.get('/transaction/id',(req,res)=>{
   app.listen(port, () => {
     console.log(`AB3 backend app listening at http://localhost:${port}`)
   })
+
+  AsyncLocalStorage
